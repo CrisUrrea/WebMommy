@@ -16,7 +16,7 @@ document.querySelectorAll('.return-button').forEach(button => {
         e.stopPropagation();
         button.closest('.flip-card').classList.remove('flip');
         setTimeout(() => {
-            location.replace('../main.html');
+            location.replace('main.html');
         }, 500);
     });
 });
