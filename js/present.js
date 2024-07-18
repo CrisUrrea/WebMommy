@@ -33,6 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function goToMain() {
     setTimeout(() => {
-        location.replace('../main.html');
+        location.replace('../index.html');
     }, 500);
 }
