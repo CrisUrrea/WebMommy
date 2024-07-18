@@ -129,6 +129,81 @@ p{
     color: white;
 }
 
+/* Estilos para el icono de disco de vinilo */
+.vinyl-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #6200EA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: spin 4s linear infinite;
+}
+
+.vinyl-icon i {
+    color: white;
+    font-size: 24px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilos para el popup de Spotify */
+.spotify-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.spotify-popup-content {
+    background-color: #6200EA;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.spotify-popup-content h2 {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.spotify-popup-content a:hover {
+    text-decoration: underline;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     .wheel {
         width: 200px;
@@ -141,6 +216,21 @@ p{
     }
 
     .popup-content {
+        width: 90%;
+    }
+
+    .vinyl-icon {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .vinyl-icon i {
+        font-size: 20px;
+    }
+
+    .spotify-popup-content {
         width: 90%;
     }
 }

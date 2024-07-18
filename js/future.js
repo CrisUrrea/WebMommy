@@ -17,3 +17,11 @@ function goToMain() {
         location.replace('../index.html');
     }, 500);
 }
+
+function openSpotifyPopup() {
+    document.getElementById('spotifyPopup').style.display = 'block';
+}
+
+function closeSpotifyPopup() {
+    document.getElementById('spotifyPopup').style.display = 'none';
+}
