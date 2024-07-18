@@ -14,6 +14,6 @@ function closePopup(popupId) {
 
 function goToMain() {
     setTimeout(() => {
-        location.replace('../main.html');
+        location.replace('../index.html');
     }, 500);
 }
